@@ -42,7 +42,7 @@ program
 			promptly.prompt('enter session name (empty for no save):', { default: '_default', retry: false }, function(err, name) {
 
 				if (name != '_default') {
-					config.setIssueSession('contoso', options);
+					config.setIssueSession(name, options);
 				};
 
 				core.issue(options, function (err, token) {
