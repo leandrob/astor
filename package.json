@@ -1,0 +1,28 @@
+{
+  "name": "astor",
+  "version": "0.1.0",
+  "description": "Astor is a command line development tool for token-based authentication.",
+  "dependencies": {
+    "commander": "2.2.0",
+    "colors": "0.6.2",
+    "promptly": "0.2.0",
+    "jsonwebtoken": "0.2.0",
+    "simplewebtoken": "0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leandrob/astor.git"
+  },
+  "bin": {
+    "astor": "./bin/index.js"
+  },
+  "keywords": [
+    "SWT",
+    "JWT",
+    "development tool",
+    "identity federation"
+  ],
+  "author": "Leandro Boffi (lboffi@gmail.com)",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
