@@ -1,6 +1,26 @@
 Astor
 =============
-Astor is a command line development tool for token-based authentication systems.
+Astor is a command line development tool for token-based authentication systems. It allows you to issue JWT and SWT for testing and development. You can also store settings like issuers and user profile to easly combine them:
+
+```bash
+$ astor issue -issuer myissuer -profile me@leandrob.com -audience http://relyingparty.com/
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lI
+joiTGVhbkIiLCJhdWQiOiJodHRwOi8vcmVseWluZ3BhcnR5LmNvbS8iLCJpc3MiOiJodHRwOi8vbXlpc3N1ZXIuY29tLyIsImlhdCI6MTM5NzM3NjU5MX0
+.d6Cb0IQsltocjOtLsfXhjseLcZpcNIWnHeIv4bqrCv4
+
+```
+
+You can even store this combinations of issuer, profile, audience and other options with a friendly name to reuse on the future:
+
+```bash
+$ astor issue -s myCombinationName
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lI
+joiTGVhbkIiLCJhdWQiOiJodHRwOi8vcmVseWluZ3BhcnR5LmNvbS8iLCJpc3MiOiJodHRwOi8vbXlpc3N1ZXIuY29tLyIsImlhdCI6MTM5NzM3NjU5MX0
+.d6Cb0IQsltocjOtLsfXhjseLcZpcNIWnHeIv4bqrCv4
+```
+
 
 # Installation
 
