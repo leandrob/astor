@@ -92,7 +92,7 @@ Would you like to save the session settings? yes
 Enter session name: myissuer-jwt-leanb
 ```
 
-###Issue a JWT, loading user profile from configuration.
+####Issue a JWT, loading user profile from configuration.
 
 If you don't use `-p` argument you will be prompt for creating user profile, you will also have the option of saving the profile in configuration for the future. In the previous example I'm saving user profile as `me@leandrob.com` so next time I don't need to enter claim types and claim values manualy:
 
@@ -121,7 +121,7 @@ Would you like to save the session settings? yes
 Enter session name: myissuer-me@leandrob.com
 ```
 
-###Issue a JWT, loading the whole settings from configuration
+####Issue a JWT, loading the whole settings from configuration
 
 After each `issue` session you will be prompt for saving the session settings for the future, this will allow you to use the `-s` argument to load the whole settings next time:
 
